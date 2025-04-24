@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+</head>
+<body>
+<table border="1">
+    <caption>Student Table</caption>
+    <thead>
+    <th>#Id</th>
+    <th>First Name</th>
+    <th>SurName</th>
+    <th>Mobile</th>
+    <th>Address</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Amal</td>
+            <td>Fernando</td>
+            <td>0776345237</td>
+            <td>Galle</td>
+        </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Nimal</td>
+        <td>Perera</td>
+        <td>0777654231</td>
+        <td>Panadura</td>
+    </tr>
+    </tbody>
+    <tfoot>
+        <th>#Id</th>
+        <th>First Name</th>
+        <th>SurName</th>
+        <th>Mobile</th>
+        <th>Address</th>
+    </tfoot>
+</table>
+
+
+<!--Colspan-->
+
+<table border="1">
+    <caption>Student Table</caption>
+    <thead>
+    <th>#Id</th>
+    <th>First Name</th>
+    <th>SurName</th>
+    <th>Mobile 01</th>
+    <th>Mobile 02</th>
+    <th>Address</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Amal</td>
+        <td>Fernando</td>
+        <td colspan="2">0776345237</td>
+        <td>Galle</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Nimal</td>
+        <td>Perera</td>
+        <td>0777654231</td>
+        <td>0777656631</td>
+        <td>Panadura</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <th>#Id</th>
+    <th>First Name</th>
+    <th>SurName</th>
+    <th>Mobile 01</th>
+    <th>Mobile 02</th>
+    <th>Address</th>
+    </tfoot>
+</table>
+
+
+<!--Rowspan-->
+
+<table border="1">
+    <caption>Student Table</caption>
+    <thead>
+    <th>#Id</th>
+    <th>First Name</th>
+    <th>SurName</th>
+    <th>Mobile</th>
+    <th>Address</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Amal</td>
+        <td>Fernando</td>
+        <td>0776345237</td>
+        <td>Galle</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Nimal</td>
+        <td>Perera</td>
+        <td rowspan="2">0777654231</td>
+        <td>Panadura</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Sunimal</td>
+        <td>Perera</td>
+        <td>Panadura</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <th>#Id</th>
+    <th>First Name</th>
+    <th>SurName</th>
+    <th>Mobile</th>
+    <th>Address</th>
+    </tfoot>
+</table>
+
+
+
+
+<!--Task-->
+
+
+<table border="1">
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th colspan="2">Email</th>
+        <th>Parent's Name</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Kavindu</td>
+            <td>kavindu1@gmail.com</td>
+            <td>Kavindu2@gmail.com</td>
+            <td>Mr.Rathnayaka</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Janith</td>
+            <td>Janith1@gmail.com</td>
+            <td>Janith2@gmail.com</td>
+            <td>Mr.Sarath</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Sheron</td>
+            <td colspan="2">Sheron@gmail.com</td>
+            <td rowspan="2">Mr.Kamal</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Brian</td>
+            <td>brian1@gmail.com</td>
+            <td>brian2@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Vishwa</td>
+            <td>vishwa1@gmail.com</td>
+            <td>vishwa2@gmail.com</td>
+            <td>Mr.Nihal</td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>Saroja</td>
+            <td rowspan="2" colspan="2">saroja@gmail.com</td>
+            <td colspan="2" rowspan="2">Mr.Nelson</td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>Sarojani</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

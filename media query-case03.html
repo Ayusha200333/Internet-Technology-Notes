@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 03</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: white;
+            color: white;
+        }
+
+        header {
+           display: flex;
+           align-items: center;
+           height: 80px;
+           padding-left: 10px;
+           background: lightgray;
+           position:relative;
+        }
+
+        header>div {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .logo{
+            border-radius:20px;
+            width:50px;
+
+        }
+
+        nav>ul {
+           position:absolute;
+           width:fit-content;
+           height:fit-content;
+           left:0;
+           right:0;
+           top:0;
+           bottom:0;
+           margin:auto;
+           list-style: none;
+           display: flex;
+        }
+
+        nav>ul>a {
+            margin: 0 10px;
+        }
+
+
+        .hero{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:50px;
+        }
+
+        .hero>div{
+            max-width:100%;
+        }
+
+        .hero h3 {
+            font-size: 30px;
+            color: black;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            font-weight: bold;
+            margin: 10px 0;
+            color:black;
+        }
+
+        #my-btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:10px 20px;
+            background: #00A9FF;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: background 0.3s;
+        }
+
+        #my-btn:hover{
+            background: #0077CC;
+        }
+
+        .my-image:last-child {
+            width: 400px;
+            aspect-ratio:1/1;
+        }
+
+
+@media all and (max-width:800px) {
+    nav ul {
+        display: none;
+    }
+}
+
+
+</style>
+</head>
+<body>
+<header>
+    <div>
+        <img src="assets/images/lap%20pic.jpg" alt="browser" class="logo">
+    </div>
+    <nav>
+        <ul>
+            <a href="#">Home</a>
+            <a href="#">Service</a>
+            <a href="#">Awards</a>
+            <a href="#">Contact</a>
+        </ul>
+    </nav>
+<!--    <i class="fa-solid fa-bars"></i>   /*fontawesome icon*/-->
+</header>
+<section class="hero">
+    <div>
+        <h1>Saman</h1>
+        <h3>Fullstack developer</h3>
+        <button id="btn" class="my-btn">Explore</button>
+    </div>
+    <br><br>
+    <div>
+        <img class="my-image" src="assets/images/unsplash_6sAl6aQ4OWI.png" title="My image" alt="Can't load">
+    </div>
+</section>
+<script src="assets/lib/fontawesome/js/all.js"></script>
+</body>
+</html>

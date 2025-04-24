@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positions</title>
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+
+    <style>
+
+        /*Static = in-default position*/
+
+        /**Relative position*/
+        /*div{*/
+        /*    width: 200px;*/
+        /*    height: 200px;*/
+        /*    aspect-ratio: 1/1; !*Width eke size ekatama height ekath gannawa*!*/
+        /*    background-color: orange;*/
+
+
+        /*    position: relative;*/
+
+        /*    !*top , bottom , left , right and position ---- properties of position *!*/
+
+        /*    left: 200px;*/
+        /*    top: 100px;*/
+        /*    bottom: 300px;*/
+        /*    right: 200px;*/
+
+
+        /*---Absolute position---*/
+        /*main {*/
+        /*    width: 1200px;*/
+        /*    height: 500px;*/
+        /*    border: 5px solid red;*/
+        /*    position: relative;*/
+        /*}*/
+
+        /*section{*/
+        /*        width: 1000px;*/
+        /*        height: 400px;*/
+        /*        border: 5px solid greenyellow;*/
+        /*        !*position: relative;*!*/
+        /*}*/
+
+
+        /*div{*/
+        /*    width: 200px;*/
+        /*    aspect-ratio: 1/1;*/
+        /*    background: blue;*/
+        /*    position: absolute;*/
+        /*    right: 0;*/
+
+
+
+        /*---Task---*/
+
+        /*section {*/
+        /*    width: 1000px;*/
+        /*    height: 500px;*/
+        /*    border: 5px solid orange;*/
+        /*    position: relative;*/
+        /*}*/
+
+        /*div {*/
+        /*    width: 70px;*/
+        /*    height: 70px;*/
+
+        /*    position: absolute;*/
+        /*}*/
+
+        /*div:nth-child(1) { top: 0; left: 0; background-color: red}*/
+        /*div:nth-child(2) { top: 0; right: 0; background-color: blue}*/
+        /*div:nth-child(3) { bottom:0; left:0; background-color: green}*/
+        /*div:nth-child(4) { bottom:0; right:0; background-color: brown}*/
+        /*div:nth-child(5) { top: 0; bottom: 0; left: 0; right: 0; margin: auto; background-color: pink}*/
+
+
+        div{
+            width: 50%; /*50vw*/
+            height: 50%; /*50vh*/
+            position: absolute;
+        }
+
+        body>div:first-child {
+            background-color: red;
+            top: 0;
+            left: 0;
+        }
+
+        body>div:nth-child(2) {
+            background-color: blue;
+            top: 0;
+            right: 0;
+        }
+
+        body>div:nth-child(3) {
+            background-color: pink;
+            bottom: 0;
+            left: 0;
+        }
+
+        body>div:nth-child(4) {
+            background-color: orange;
+            bottom: 0;
+            right: 0;
+        }
+
+
+        body>div > div {
+            width: 20%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 100%;
+            margin: auto;
+        }
+
+        body>div>div>div{
+            width: 50%;
+            aspect-ratio: 1/1;
+            position: absolute;
+        }
+
+        body>div>div>div:first-child{
+            background-color: greenyellow;
+            border-top-left-radius: 100%;
+        }
+
+        body>div>div>div:nth-child(2){
+            background: green;
+            bottom: 0;
+            right: 0;
+            border-bottom-right-radius: 100%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<!--<main>-->
+<!--    <section>-->
+<!--        <div></div>-->
+<!--    </section>-->
+<!--</main>-->
+
+
+<!--    <section>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--    </section>-->
+
+
+    <div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animation part 2</title>
+    <style>
+        div{
+            width: 200px;
+            aspect-ratio: 1/1;
+            background-color: red;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-name: my_color;
+            border: 3px dotted black;
+        }
+
+        @keyframes my_color {
+            0%{
+                background-color: blueviolet;
+            }
+
+            20%{
+                background-color: cyan;
+            }
+
+            40%{
+                background-color: lightpink;
+            }
+
+            60%{
+                background-color: #00A9FF;
+            }
+
+            80%{
+                background-color: brown;
+            }
+
+            100%{
+                background-color: orange;
+                width: 300px;
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

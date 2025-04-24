@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>script</title>
+</head>
+<body>
+<script>
+    //---Named Function---//
+
+    function myFunction(){
+        console.log("Welcome to my Functions");
+    }
+    myFunction();
+
+
+    function myFunction2(num1 , num2){
+        let sum = num1 + num2;
+        console.log(`num1+num2=${sum}`);
+    }
+    myFunction2(6,4);
+
+
+    function myFunction3(num1 , num2){
+        let sum = num1 + num2;
+        return sum;
+    }
+    let sum = myFunction3(600,400);
+    console.log(sum);
+
+
+
+    //---Functions Expressions---//
+
+    const myFunction4 = function (){
+        console.log("Welcome to Functions Expressions");
+    }
+    myFunction4();
+
+
+
+    const myFunction5 = function (num1 , num2){
+       return num1+num2;
+    }
+    let myResult = myFunction5(6,8);
+    console.log(myResult);
+
+
+    //---Arrow Functions---//
+
+    const myFunction6 = () => {
+        console.log("Welcome to Arrow Function");
+    }
+    myFunction6();
+
+
+    const myFunction7 = (num1 ,num2 ,num3) =>{
+        return num1+num2+num3;
+    }
+    let MyResult = myFunction7(1,2,3);
+    console.log(MyResult);
+
+
+    //--- Functions Constructor---//
+
+    let myFunction8 = new Function("arg1" , "arg2" ,"return arg1 + arg2");
+    sum = myFunction8(30,20);
+    console.log(sum);
+</script>
+</body>
+</html>

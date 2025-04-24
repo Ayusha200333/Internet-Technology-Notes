@@ -1,0 +1,289 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <style>-->
+<!--        section {-->
+<!--            display: flex;-->
+<!--            justify-content: space-between;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<section>-->
+<!--    <div>A</div>-->
+<!--    <div>B</div>-->
+<!--    <div>C</div>-->
+<!--    <div>D</div>-->
+<!--    <div>E</div>-->
+<!--    <div>F</div>-->
+<!--</section>-->
+
+<!--<script>-->
+<!--    let data = ['C', 'D', 'E', 'F', 'A', 'B'];-->
+
+<!--    const updateLetters = () => {-->
+<!--        let lastLetter = data.pop();-->
+<!--        data.unshift(lastLetter);-->
+
+<!--        // for(let i=0; i<6; i++) {-->
+<!--        //     document.getElementsByTagName('div')[i].innerText = data[i]-->
+<!--        // }-->
+
+<!--        data.map((item, index) => {-->
+<!--            document.getElementsByTagName('div')[index].innerText = item-->
+<!--        });-->
+
+<!--        // document.getElementsByTagName('div')[0].innerText = data[0]-->
+<!--        // document.getElementsByTagName('div')[1].innerText = data[1]-->
+<!--        // document.getElementsByTagName('div')[2].innerText = data[2]-->
+<!--        // document.getElementsByTagName('div')[3].innerText = data[3]-->
+<!--        // document.getElementsByTagName('div')[4].innerText = data[4]-->
+<!--        // document.getElementsByTagName('div')[5].innerText = data[5]-->
+<!--    }-->
+
+<!--    setInterval(updateLetters, 3000);-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Queue Process Animation</title>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: Arial, sans-serif;-->
+<!--            display: flex;-->
+<!--            flex-direction: column;-->
+<!--            align-items: center;-->
+<!--            justify-content: center;-->
+<!--            height: 100vh;-->
+<!--            background-color: #f0f0f0;-->
+<!--            margin: 0;-->
+<!--        }-->
+<!--        section {-->
+<!--            display: flex;-->
+<!--            gap: 20px;-->
+<!--            justify-content: center;-->
+<!--            align-items: center;-->
+<!--            overflow: hidden;-->
+<!--            width: 80%;-->
+<!--            margin-bottom: 20px;-->
+<!--        }-->
+<!--        .queue-item {-->
+<!--            display: flex;-->
+<!--            flex-direction: column;-->
+<!--            justify-content: center;-->
+<!--            align-items: center;-->
+<!--            background-color: #fff;-->
+<!--            padding: 10px;-->
+<!--            border: 2px solid #ddd;-->
+<!--            border-radius: 8px;-->
+<!--            width: 100px;-->
+<!--            height: 150px;-->
+<!--            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);-->
+<!--        }-->
+<!--        .queue-item img {-->
+<!--            width: 50px;-->
+<!--            height: 50px;-->
+<!--            margin-bottom: 10px;-->
+<!--        }-->
+<!--        .controls {-->
+<!--            display: flex;-->
+<!--            gap: 15px;-->
+<!--        }-->
+<!--        button {-->
+<!--            padding: 10px 20px;-->
+<!--            font-size: 16px;-->
+<!--            cursor: pointer;-->
+<!--            border: none;-->
+<!--            border-radius: 5px;-->
+<!--            background-color: #444;-->
+<!--            color: white;-->
+<!--        }-->
+<!--        button:hover {-->
+<!--            background-color: #666;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<section id="queue">-->
+<!--    <div class="queue-item"><img src="https://via.placeholder.com/50" alt="A"><div>A</div></div>-->
+<!--    <div class="queue-item"><img src="https://via.placeholder.com/50" alt="B"><div>B</div></div>-->
+<!--    <div class="queue-item"><img src="https://via.placeholder.com/50" alt="C"><div>C</div></div>-->
+<!--    <div class="queue-item"><img src="https://via.placeholder.com/50" alt="D"><div>D</div></div>-->
+<!--    <div class="queue-item"><img src="https://via.placeholder.com/50" alt="E"><div>E</div></div>-->
+<!--    <div class="queue-item"><img src="https://via.placeholder.com/50" alt="F"><div>F</div></div>-->
+<!--</section>-->
+
+<!--<div class="controls">-->
+<!--    <button onclick="startQueue()">Start</button>-->
+<!--    <button onclick="stopQueue()">Stop</button>-->
+<!--</div>-->
+
+<!--<script>-->
+<!--    let data = ['A', 'B', 'C', 'D', 'E', 'F'];-->
+<!--    let isRunning = false;-->
+<!--    let interval;-->
+
+<!--    const queueItems = document.querySelectorAll('.queue-item');-->
+
+<!--    // Function to update the queue-->
+<!--    const updateQueue = () => {-->
+<!--        let lastItem = data.pop();-->
+<!--        data.unshift(lastItem);-->
+
+<!--        queueItems.forEach((item, index) => {-->
+<!--            item.querySelector('div').textContent = data[index];-->
+<!--            item.querySelector('img').src = `https://via.placeholder.com/50?text=${data[index]}`;-->
+<!--        });-->
+<!--    };-->
+
+<!--    // Function to start the queue animation-->
+<!--    const startQueue = () => {-->
+<!--        if (!isRunning) {-->
+<!--            interval = setInterval(updateQueue, 2000);-->
+<!--            isRunning = true;-->
+<!--        }-->
+<!--    };-->
+
+<!--    // Function to stop the queue animation-->
+<!--    const stopQueue = () => {-->
+<!--        clearInterval(interval);-->
+<!--        isRunning = false;-->
+<!--    };-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Queue Animation</title>
+    <style>
+        body {
+            background-color: #f8f8f8;
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #ff3399;
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .queue-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 30px;
+        }
+
+        .person {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            transition: transform 0.5s;
+        }
+
+        .person img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .house {
+            width: 90px;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .controls {
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Queue to the House</h1>
+
+<div class="queue-container" id="queue">
+    <!-- People + house will appear here -->
+</div>
+
+<div class="controls">
+    <button onclick="startQueue()">Start</button>
+    <button onclick="stopQueue()">Stop</button>
+</div>
+
+<script>
+    const people = ['A', 'B', 'C', 'D', 'E', 'F'];
+    let interval;
+    const queueContainer = document.getElementById('queue');
+
+    const personImage = "https://cdn-icons-png.flaticon.com/512/1995/1995574.png"; // cartoon person
+    const houseImage = "https://cdn-icons-png.flaticon.com/512/616/616408.png";   // house
+
+    function renderQueue() {
+        queueContainer.innerHTML = "";
+
+        people.forEach(letter => {
+            queueContainer.innerHTML += `
+        <div class="person">
+          <img src="${personImage}" />
+          <div>${letter}</div>
+        </div>`;
+        });
+
+        // Add the house at the end
+        queueContainer.innerHTML += `
+      <div class="person">
+        <img src="${houseImage}" class="house" />
+      </div>`;
+    }
+
+    function rotateQueue() {
+        const last = people.pop();
+        people.unshift(last);
+        renderQueue();
+    }
+
+    function startQueue() {
+        if (!interval) {
+            interval = setInterval(rotateQueue, 2000); // change every 2s
+        }
+    }
+
+    function stopQueue() {
+        clearInterval(interval);
+        interval = null;
+    }
+
+    // Initial render
+    renderQueue();
+</script>
+
+</body>
+</html>
+
+
+

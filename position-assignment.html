@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <style>
+
+        body{
+            overflow: hidden;
+        }
+
+        body>div.main{
+            width: 50%; /*50vw*/
+            height: 50%; /*50vh*/
+            position: absolute;
+        }
+
+        body>div.main:first-child {
+            background-color: red;
+            top: 0;
+            left: 0;
+        }
+
+        body>div.main:nth-child(2) {
+            background-color: blue;
+            top: 0;
+            right: 0;
+        }
+
+        body>div.main:nth-child(3) {
+            background-color: darkslateblue;
+            bottom: 0;
+            left: 0;
+        }
+
+        body>div.main:nth-child(4) {
+            background-color: orange;
+            bottom: 0;
+            right: 0;
+        }
+
+        body>div.main>div {
+            width: 20%;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 100%;
+            margin: auto;
+        }
+
+        body>div.main>div>div{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: crimson;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        body>div:nth-child(5){
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            background: white;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        body>div:nth-child(5)>div{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: brown;
+            border-radius: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body>div:nth-child(6){
+            width: 8vw;
+            aspect-ratio: 1/1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom-right-radius: 100%;
+            background-color: white;
+        }
+
+        body>div:nth-child(7){
+            width: 8vw;
+            aspect-ratio: 1/1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 100%;
+            background-color: white;
+        }
+
+        body>div:nth-child(8){
+            width: 8vw;
+            aspect-ratio: 1/1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-top-right-radius: 100%;
+            background-color: white;
+        }
+
+        body>div:nth-child(9){
+            width: 8vw;
+            aspect-ratio: 1/1;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 100%;
+            background-color: white;
+        }
+
+        body>div:nth-child(10){
+            width: 90px;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+            top: -50px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 0 0 100% 100%;
+        }
+
+        body>div:nth-child(11){
+            width: 90px;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 100% 100% 0 0;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="main">
+    <div class="main">
+        <div class="main">
+            <div class="main"></div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="main">
+        <div class="main">
+            <div class="main">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="main">
+        <div class="main">
+            <div class="main">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="main">
+        <div class="main">
+            <div class="main">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div></div>
+</div>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<div></div>
+<div></div>
+
+
+
+</body>
+</html>

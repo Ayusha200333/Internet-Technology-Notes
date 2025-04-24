@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selector</title>
+    <style>
+      /*!*Type Selector*!*/
+      /*  h1{*/
+      /*      color:red;*/
+      /*  }*/
+
+      /*  p{*/
+      /*      background: deeppink;*/
+      /*  }*/
+
+
+      /*  !*Id Selector*!*/
+
+        /*#special-topic{*/
+        /*    background-color: yellow;*/
+        /*}*/
+
+        /*Class Selector*/
+        /*.my-topic{*/
+        /*    background-color: aquamarine;*/
+        /*}*/
+
+      /*  !*Universal Selector*!*/
+      /**{*/
+      /*    color: greenyellow;*/
+      /*}*/
+
+      /*Attribute Selector*/
+      /*[name]{*/
+      /*    background-color: greenyellow;*/
+      /*}*/
+
+      /*[name="name2"]{*/
+      /*    color: red;*/
+      /*}*/
+
+      /*Attribute selector with Starting value...*/
+      /*[href^="https"]{*/
+      /*    background-color: aqua;*/
+      /*}*/
+
+      /*Attribute selector with ending value...*/
+      /*[href$=".lk"]{*/
+      /*    background-color: lightpink;*/
+      /*}*/
+
+      /*[href*="ijse"]{*/
+      /*    background-color: coral;*/
+      /*}*/
+
+      /*Attribute Selector With Given Word*/
+      /*[href~="ijse"]{*/
+      /*    background-color: orange;*/
+      /*}*/
+
+      /*p[name]{*/
+      /*    background-color: darksalmon;*/
+      /*}*/
+
+      /*--Pseudo Class Selector (status)--*/
+      /*h1:hover{*/
+      /*    color: red;*/
+      /*}*/
+
+      /*:hover{*/
+      /*    color: red;*/
+      /*}*/
+
+
+      /*h1:hover{*/
+      /*    color: red;*/
+      /*}*/
+      /*h1:active{*/
+      /*    color: skyblue;*/
+      /*}*/
+
+
+      /*a:link{*/
+      /*    color: hotpink;*/
+      /*}*/
+      /*a:visited{*/
+      /*    color:aqua;*/
+      /*}*/
+
+      /*input:focus{*/
+      /*    background-color: yellow;*/
+      /*}*/
+
+
+      /*--Pseudo Class Selector (location)--*/
+
+      /*li:first-child{*/
+      /*    color: greenyellow;*/
+      /*}*/
+
+      /*li:last-child{*/
+      /*    color: cornflowerblue;*/
+      /*}*/
+
+      /*li:nth-child(2){*/
+      /*    color: yellow;*/
+      /*}*/
+
+      /*li:nth-child(4){*/
+      /*    color: pink;*/
+      /*}*/
+
+      /*li:nth-last-child(2){*/
+      /*    background-color: mediumvioletred;*/
+      /*}*/
+
+      /*li:nth-child(odd){*/
+      /*    color: crimson;*/
+      /*}*/
+
+      /*li:nth-child(even){*/
+      /*    color: lime;*/
+      /*}*/
+
+      /*li:nth-child(n+4){*/
+      /*    color: yellow;*/
+      /*}*/
+
+      /*li:nth-child(3n-1){*/
+      /*    color: orange;*/
+      /*}*/
+
+      /*li:nth-child(3n+1){*/
+      /*    background-color: cornflowerblue;*/
+      /*}*/
+
+      /*li:nth-child(4n){*/
+      /*    background-color: lightgreen;*/
+      /*}*/
+
+    /*---Pseudo Element Selector---*/
+    /*  h1::before{*/
+    /*      content:"Hello..";*/
+    /*  }*/
+
+      /*h1::after{*/
+      /*    content:"😍";*/
+      /*}*/
+
+    /*h1::first-letter{*/
+    /*    color: orange;*/
+    /*}*/
+
+    /*p::first-line{*/
+    /*    color: blue;*/
+    /*}*/
+
+    /*p::selection{*/
+    /*    background-color: lightpink;*/
+    /*    color: red;*/
+    /*}*/
+
+
+    /*::marker{*/
+    /*    content: "👉 ";*/
+    /*}*/
+
+    /*input::placeholder{*/
+    /*    color: orange;*/
+    /*}*/
+
+    /*input::file-selector-button{*/
+    /*    background-color: lightpink;*/
+    /*}*/
+    /*input::file-selector-button:hover{*/
+    /*    background-color: green;*/
+    /*}*/
+
+
+    /*---Grouping Selector---*/
+
+      h1,.my-item,#my-button,p{
+          background: palegoldenrod;
+      }
+
+
+    
+    </style>
+</head>
+<body>
+
+
+<h1>Hello World! -1</h1>
+<p>Welcome to my website</p>
+
+<h1 class="my-topic">Hello World! -2</h1>
+<p>Welcome to my website</p>
+
+<h1 id="special-topic">Hello World! -3</h1>
+<p>Welcome to my website</p>
+
+<h1 class="my-topic">Hello World! -4</h1>
+<p>Welcome to my website</p>
+
+
+<a href="https://ijse.lk">IJSE 1</a>
+<a href="http://ijse.lk" name="name1">IJSE 2</a>
+<a href="www.ijse.lk">IJSE 3</a>
+<a href="https://ijse.com" name="name2">IJSE 4</a>
+<a href="www.solution">IJSE 5</a>
+<a href="googleijsesrilankasolution.net">IJSE 6</a>
+<a href="google ijse srilankasolution.net">IJSE 7</a>
+
+<p name="name2">Welcome to my website 1</p>
+<p>Welcome to my website 2</p>
+
+
+
+<h1>Hello World!</h1>
+
+<a href="https://www.bolton.ac.uk/">bolton</a>
+<a href="https://www.wikipedia.org/">wikipedia</a>
+<a href="https://www.westminster.ac.uk/">westminister</a>
+
+<input type="text">
+
+
+<ol type="1">
+    <li>JAVA</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>GO</li>
+    <li>Python</li>
+    <li>Pearl</li>
+</ol>
+
+<h1> Welcome to IJSE</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet animi aut deserunt harum in, incidunt inventore ipsa iusto laborum, numquam porro, qui ratione. Aut eaque hic saepe veniam voluptate.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi cum debitis dolore eius laboriosam maiores minus nulla obcaecati officia qui, quia similique sunt tenetur totam velit vero voluptates! Officia.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi cum debitis dolore eius laboriosam maiores minus nulla obcaecati officia qui, quia similique sunt tenetur totam velit vero voluptates! Officia.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi cum debitis dolore eius laboriosam maiores minus nulla obcaecati officia qui, quia similique sunt tenetur totam velit vero voluptates! Officia.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi cum debitis dolore eius laboriosam maiores minus nulla obcaecati officia qui, quia similique sunt tenetur totam velit vero voluptates! Officia.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi cum debitis dolore eius laboriosam maiores minus nulla obcaecati officia qui, quia similique sunt tenetur totam velit vero voluptates! Officia.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi cum debitis dolore eius laboriosam maiores minus nulla obcaecati officia qui, quia similique sunt tenetur totam velit vero voluptates! Officia.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi cum debitis dolore eius laboriosam maiores minus nulla obcaecati officia qui, quia similique sunt tenetur totam velit vero voluptates! Officia.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi cum debitis dolore eius laboriosam maiores minus nulla obcaecati officia qui, quia similique sunt tenetur totam velit vero voluptates! Officia.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi cum debitis dolore eius laboriosam maiores minus nulla obcaecati officia qui, quia similique sunt tenetur totam velit vero voluptates! Officia.
+</p>
+
+<ol type="1">
+    <li>A</li>
+    <li class="my-item">B</li>
+    <li>C</li>
+    <li class="my-item">D</li>
+    <li>E</li>
+</ol>
+
+<input type="text" placeholder="Enter Your Name">
+
+<input type="file">
+
+<button id="my-button"> click me</button>
+
+
+<h1></h1>
+
+</body>
+</html>

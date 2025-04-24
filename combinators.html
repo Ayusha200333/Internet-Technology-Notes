@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combinators</title>
+
+  <style>
+  /*<!--Child Combinator-->*/
+    section > h1{
+      color: red;
+    }
+
+  /*--Decendent Combinator--*/
+    section h1{
+        color: red;
+    }
+
+  /*--Adjacent Combinators--*/
+    h2+h3{
+        background-color: lightslategray;
+    }
+
+  /*--General sibilings Combinator--*/
+    h2~h3{
+        background-color: lightpink;
+    }
+
+
+  /*////////////////////////*/
+  body>ol>li:first-child {
+      color: yellow;
+  }
+
+
+  </style>
+
+</head>
+<body>
+
+<h1>Software Engineering</h1>
+
+<section>
+  <h1>Software Engineering Module 01</h1>
+    <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+    </div>
+
+</section>
+
+<h2>Hello h2</h2>
+<h3>Hello h3</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut autem eaque enim, error expedita explicabo facilis hic magnam nulla optio, quae repellat similique tempore voluptate voluptatem voluptatibus? Cupiditate, suscipit.
+</p>
+<div>
+    <h3>Hello...</h3>
+</div>
+<h3>Hello h3</h3>
+
+
+
+<!--///////////////////////-->
+<ol type="1">
+    <li>
+        Asia
+        <ul>
+            <li>Sri Lanka</li>
+            <li>India
+                <a href="https://india.com">india.com</a>
+                <a href="https://gov.india.com">india gov</a>
+            </li>
+            <li>Japan</li>
+            <li>Russia</li>
+        </ul>
+    </li>
+    <li>Europe
+        <ol type="1">
+            <li>UK</li>
+            <li>Germany</li>
+            <li>Finland
+                <ol type="1">
+                    <li>Health Sector</li>
+                </ol>
+                        <h1>Welcome to health sector</h1>
+                <p>Hello World</p>
+
+            </li>
+        </ol>
+    </li>
+
+</ol>
+</body>
+</html>

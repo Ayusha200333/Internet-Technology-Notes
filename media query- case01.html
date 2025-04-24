@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        header {
+          display: flex;
+          align-items: center;
+          height: 80px;
+          padding-left: 10px;
+          background: lightyellow;
+          position:relative;
+        }
+
+        .logo img {
+          width: 200px;
+        }
+
+        nav ul {
+          position:absolute;
+          width:fit-content;
+          height:fit-content;
+          left:0;
+          right:0;
+          top:0;
+          bottom:0;
+          margin:auto;
+          list-style: none;
+          display: flex;
+        }
+
+        nav ul li {
+          margin: 0 10px;
+        }
+
+        .button{
+            position:absolute;
+            top:0;
+            right:0;
+            bottom:0;
+            margin:auto;
+            width:fit-content;
+            height:fit-content;
+            display:none;
+            border-radius:10px;
+        }
+
+        @media all and (max-width:800px){
+            nav ul{
+                display:none;
+            }
+            .button{
+                display:block;
+                font-size:20px;
+            }
+            .button:hover{
+                background-color:blue;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo"><img src="assets/images/WhatsApp%20Image%202025-02-28%20at%2022.20.56_697bbe7f.jpg" alt="IJSE"></div>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="button">Menu</button>
+    </nav>
+</header>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Welcome to ijse</h1>
+<h2>Welcome to basics</h2>
+<h2>Welcome to advanced</h2>
+
+<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam at corporis cum deserunt dolore doloribus ducimus in inventore, mollitia nobis obcaecati omnis quaerat quam quidem quisquam quod tempora, ut!
+</p>
+
+<a href="#">Click Me</a>
+<a href="#">Validate</a>
+
+<script src="../assets/lib/jquery-3.7.1.min.js"></script>
+
+<script>
+    // document.getElementsByTagName("h1")[0].style.background="yellow";
+    $("h1").css("background","yellow");
+
+    $(".description").css("color","red");
+
+    // var styles = "color:red; background-color:blue";
+    // document.getElementsByTagName("h1")[0].style.cssText = styles;
+
+    $("a").css({
+        'background':"pink",
+        'font-size':"100px",
+    });
+
+</script>
+</body>
+</html>
